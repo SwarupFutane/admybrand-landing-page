@@ -328,6 +328,7 @@ const TestimonialsSection = () => {
                             )}
                         >
                             <Card className="p-8 h-full flex flex-col justify-center items-center text-center">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img src={testimonial.avatar} alt={testimonial.name} className="w-20 h-20 rounded-full mb-4 border-2 border-blue-400" />
                                 <div className="flex mb-2">
                                     {[...Array(5)].map((_, i) => <Star key={i} className="text-yellow-400 fill-current" />)}
