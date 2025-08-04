@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, Menu, X, CheckCircle, ArrowRight, Star, ChevronDown, ChevronUp, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Menu, X, CheckCircle, ArrowRight, Star, ChevronDown, ChevronUp, Linkedin, Twitter, Facebook } from 'lucide-react';
 
 // Utility to merge class names with explicit types
 const cn = (...classes: (string | boolean | undefined | null)[]) => classes.filter(Boolean).join(' ');
@@ -220,7 +220,7 @@ const FeaturesSection = () => {
     const features = [
         { icon: '🎯', title: 'AI-Powered Ad Targeting', description: 'Automatically find and target your most profitable customer segments with predictive analytics.' },
         { icon: '✍️', title: 'Content Generation', description: 'Create high-converting copy for ads, emails, and social media in seconds.' },
-        { icon: '�', title: 'Predictive Analytics', description: 'Forecast campaign performance and get actionable insights to optimize your strategy.' },
+        { icon: '📊', title: 'Predictive Analytics', description: 'Forecast campaign performance and get actionable insights to optimize your strategy.' },
         { icon: '📧', title: 'Smart Email Automation', description: 'Deliver personalized email sequences that nurture leads and drive conversions.' },
         { icon: '📈', title: 'Competitor Analysis', description: 'Monitor your competition’s strategy and identify opportunities to outperform them.' },
         { icon: '💬', title: 'Social Media Management', description: 'Schedule posts, engage with your audience, and track performance across all platforms.' },
@@ -259,7 +259,7 @@ const PricingSection = () => {
             <div className="container mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-2">Flexible Pricing for Teams of All Sizes</h2>
-                    <p className="text-lg text-gray-400">Choose the plan that's right for you.</p>
+                    <p className="text-lg text-gray-400">Choose the plan that&apos;s right for you.</p>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                     {tiers.map((tier) => (
@@ -316,7 +316,7 @@ const TestimonialsSection = () => {
             <div className="container mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-2">Loved by Marketers Worldwide</h2>
-                    <p className="text-lg text-gray-400">Don't just take our word for it.</p>
+                    <p className="text-lg text-gray-400">Don&apos;t just take our word for it.</p>
                 </div>
                 <div className="relative w-full max-w-3xl mx-auto h-80">
                     {testimonials.map((testimonial, index) => (
@@ -332,7 +332,7 @@ const TestimonialsSection = () => {
                                 <div className="flex mb-2">
                                     {[...Array(5)].map((_, i) => <Star key={i} className="text-yellow-400 fill-current" />)}
                                 </div>
-                                <p className="text-lg italic text-gray-200 mb-4">"{testimonial.text}"</p>
+                                <p className="text-lg italic text-gray-200 mb-4">&quot;{testimonial.text}&quot;</p>
                                 <p className="font-bold text-xl">{testimonial.name}</p>
                                 <p className="text-blue-300">{testimonial.role}</p>
                             </Card>
